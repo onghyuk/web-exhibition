@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rounge</title>
+    <title>Lounge</title>
     
     <style>
         body{
@@ -26,7 +26,7 @@
             
          
          align-content: middle;
-         width: 70vw; 
+         width: 90vw; 
         
         }
         
@@ -79,7 +79,12 @@
         
         .ch_2_time{
          margin-top: 30px;   
-         padding-left: 120px;    
+         padding-left: 180px;    
+        }
+        
+        .ch_2_name{
+         margin-top: 0px;   
+         padding-left: 180px;    
         }
         
         .ch_fr_time{
@@ -90,10 +95,22 @@
             margin-left: -400px;  
         }
         
+        .box{
+            position: fixed;
+            z-index: 10;
+        }
         
+        .boxbox{
+        display: grid;
+         grid-template-columns: 1fr 1fr;
+        }
     </style>
 </head>
 <body>
+<div class="boxbox">
+<a href="ch_1.html"><img src="ch_1.png" style="width: 100%" class="box"></a>
+<a href="ch_2.html"><img src="ch_1.png" style="width: 100%" class="box"></a>
+</div>
 <p style="margin-top: 30px; margin-left: 140px;"> 목요일</p>
  
   <div class="ch">
