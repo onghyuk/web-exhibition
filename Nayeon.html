@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hanbyeol</title>
+    <title>Nayeon</title>
     
     <style> 
         
@@ -52,13 +52,27 @@
 <body>
     
     
-    <p align="middle">
-    <iframe src="https://player.vimeo.com/video/416857812?title=0&byline=0&portrait=0" width="1200px" height="900px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </p>
+    <div id="twitch-embed" align="middle" style="margin-top: 10px;"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1000,
+        height: 600,
+        channel: "yon_na",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["https://onghyuk.github.io/web-exhibition/", "https://onghyuk.github.io/web-exhibition/rounge.html"]
+      });
+    </script>
+    
+    <a href="yeona/yeona.html" target="_blank"><img src="yeona/0.jpg"></a>
     
     <div class="container">
         <div class="caption-container">
-            <p class="caption">논빌트인, 2020, 비디오, 6분 57초</p>
+            <p class="caption">폐관, 라이브 퍼포먼스, 20'00", 2020. </p>
         </div>
         
         <div class="text-container">
