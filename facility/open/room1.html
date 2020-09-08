@@ -37,11 +37,14 @@
         
         .content{
         position: relative;
-        left: 5vw;
+        left: 2vw;
         top:15vh; 
             
-        width: 100vw;
-        height: 200vh;    
+        width: 98vw;
+        height: 200vh;   
+            
+        z-index: 9;    
+        overflow: hidden;    
         }
     
         .button{
@@ -81,14 +84,20 @@
         }
         
         .video{
-            position: relative;
-            left: 0px;
-            top:0px;
+            position: absolute;
+            left: 6.55vw;
+            top:35vh;
             
-            width: 85vw;
-            height: 90vh;
+            width: 44.5vw;
+            height: 46.5vh;
+            
+            z-index: 10;
         }
         
+        .sheet{
+            overflow: hidden;
+            z-index: 10;
+        }
         
 </style>
 <body>
@@ -109,8 +118,17 @@
         </div>
         
         <div class="content">
-              <iframe src="https://www.youtube.com/embed/0p42wk38y9o" width="100%" height="100%" frameborder="0" class="video" allow="autoplay; fullscreen" allowfullscreen></iframe>
-              <p>Fluid butt, single channer video, 7'24"</p> 
+              <iframe src="https://docs.google.com/spreadsheets/d/1OKbtLhNUVSGibaEezM0sgDlxwr0r1FqrGB3zE148xIA/pubhtml/sheet?headers=false&gid=0&range=A1:Z200"
+                    
+                width="100%"
+                height="100%"    
+                frameborder="0"
+                scrolling="no"
+                class="sheet"
+                
+                ></iframe>
+                
+                
         </div>
         
         <div class="footer">
