@@ -484,33 +484,32 @@
             grid-template-columns: 6vw 6vw 6vw;
         }
         
+        
         .content{
         position: absolute;
         left: 0px;
         top:15vh; 
             
-        width: 100vw;
-        height: 200vh; 
+        
         opacity: 1;   
         z-index: 10; 
-        transition-duration: 1s;      
-        }
-        
-        
-        
-        
-        .content:hover{
-        position: absolute;
-        left: 0px;
-        top:15vh; 
+        transition-duration: 1s;    
             
-        width: 100vw;
-        height: 200vh; 
-        opacity: 1;   
-        z-index:   10;  
-        transition-duration: 1s;      
+        width: 1800px; height: 2000px; padding: 0; overflow: hidden;
         }
-       
+        
+        
+        .rooms{
+        width: 5000px; height: 3000px; border: 0px;
+            
+        zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;    
+        }
         
         .bottom{
         position: absolute;
@@ -582,6 +581,10 @@
                 width="100%"
                 height="100%"    
                 frameborder="0"
+                scrolling="yes"
+                
+                class="rooms"    
+                
                 
                 ></iframe>
         </div>
