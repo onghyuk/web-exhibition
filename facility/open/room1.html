@@ -38,7 +38,7 @@
         .content{
         position: relative;
         left: 2vw;
-        top:15vh; 
+        top:65vh; 
             
         width: 98vw;
         height: 200vh;   
@@ -99,6 +99,29 @@
             z-index: 10;
         }
         
+        .videocover{
+            position: relative;
+            top:-20vh;
+            left: -4vw;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .video1{
+            position: relative;
+            top:0px;
+            left: 0px;
+            
+            
+        }
+        
+        .video2{
+            position: relative;
+            top:0px;
+            left: 0px;
+        }
+        
 </style>
 <body>
     <div class="container">
@@ -117,7 +140,18 @@
             -->
         </div>
         
+        <div class="videocover">
+                    <div class="video1">
+                        <iframe src="https://www.youtube.com/embed/46NfHtMu7Qw" width="100%" height="100%" frameborder="0" class="video" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="video2">
+                        <iframe src="https://www.youtube.com/embed/NoNmC_PJ8Nw" width="100%" height="100%" frameborder="0" class="video" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+        </div>
+        
         <div class="content">
+             
+             
               <iframe src="https://docs.google.com/spreadsheets/d/1OKbtLhNUVSGibaEezM0sgDlxwr0r1FqrGB3zE148xIA/pubhtml/sheet?headers=false&gid=0&range=A1:Z200"
                     
                 width="100%"
