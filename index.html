@@ -516,7 +516,7 @@
       
         
         .rooms{
-        width: 85vw height: 200vh; border: 0px;
+        width: 110vw; height: 200vh; border: 0px;
         }
         
         
@@ -603,49 +603,90 @@
         }
         
         .chat{
-            position: absolute;
-            top:0px;
-            right: 5vw;
+            position: relative;
+            top:0vh;
+            right: 0vw;
+            
             
             z-index: 8;
             opacity: 0.3;
             
             transition-delay: 5s;
             transition-duration: 1s;
+            
+            float: left;
+        }
+        
+        #chat{
+            position: absolute;
+            top:15vh;
+            right: 20vw;
+            
+            
+            z-index: 8;
+            opacity: 1;
+            
+           
+            
+            float: left;
         }
         
         .chat:hover{
             
-            position: absolute;
-            top:0px;
-            right:5vw;
+           position: relative;
+            top:0vh;
+            right: 0vw;
             
             z-index: 8;
             opacity: 1;
             
             transition-delay: 0s;
             transition-duration: 1s;
+            
+            float: left;
         
         }
         
         .poster{
-           position: absolute;
-            top:10vh;
-            left: 3.1vw;
+           position: relative;
+            top:0px;
+            left: 0px;
             
             width: 20vw;
             z-index: 10;
         }
         
+        #poster{
+           position: absolute;
+            top:10vh;
+            left: 8vw;
+            
+            width: 20vw;
+            z-index: 10; 
+        }
+        
         .close {
             position: relative;
-            top:13vw;
-            right: -1.5vw;
+            top:-22px;
+            right:2px;
             
+            font-family: sans-serif;
           float: right;
           cursor: pointer;
         color: black;
             z-index: 10;
+        }
+        
+        #close{
+           position: relative;
+            top:-20px;
+            right:2px;
+            
+          float: right;
+          cursor: pointer;
+        color: black;
+            font-family: sans-serif;
+            z-index: 10; 
         }
                                                                     
         
@@ -684,7 +725,7 @@
         
         
         <div class="content">
-                <iframe src="https://docs.google.com/spreadsheets/d/1dn0YaqGN7xYdLxfvyYYQf77xdP-Br977ERbCSyTCn04/pubhtml/sheet?headers=false&gid=2141138861&range=A1:Q50" 
+                <iframe src="https://docs.google.com/spreadsheets/d/1dn0YaqGN7xYdLxfvyYYQf77xdP-Br977ERbCSyTCn04/pubhtml/sheet?headers=false&gid=2141138861&range=A1:Z100" 
                     
                 width="100%"
                 height="100%"    
@@ -697,7 +738,7 @@
                 ></iframe>
         </div>
         
-        <div class="poster">
+        <div id="poster">
         
         <img src="facility/main/MINYTING/Poster.png" alt="poster" class="poster">  
         <span onclick="this.parentElement.style.display='none'" class="close">X</span>   
@@ -821,9 +862,10 @@
         
         <div class="footer">
            
-           
+            <div id=chat> 
             <iframe src="https://video.ibm.com/socialstream/23948584?videos=0" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="250" height="302" class="chat"></iframe>
-        
+            <span onclick="this.parentElement.style.display='none'" id="close">X</span> 
+            </div>
         
         </div>
         
